@@ -1,0 +1,9 @@
+Naomi is getting into the car
+George is getting into the car
+The changing word was: [Naomi, George]
+Naomi is eating at a restaurant
+Naomi is eating at a diner
+The changing word was: [diner, restaurant]
+Naomi is eating at a diner
+George is eating at a diner
+The changing word was: [Naomi, George]

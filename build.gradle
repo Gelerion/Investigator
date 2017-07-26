@@ -1,0 +1,22 @@
+group 'com.gelerion.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def slf4Version = '1.7.22'
+    def logj2Version = '2.6.2'
+    compile "org.slf4j:log4j-over-slf4j:$slf4Version" //route all the log4j v1 to slf4j
+    compile "org.slf4j:slf4j-api:$slf4Version"        //slf4j api
+    compile "org.apache.logging.log4j:log4j-slf4j-impl:$logj2Version"  //log4j2 bridge
+    compile "org.apache.logging.log4j:log4j-core:$logj2Version"        //log4j2 core
+    compile "org.apache.logging.log4j:log4j-api:$logj2Version"         //log4j2 api
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
